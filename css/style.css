@@ -61,7 +61,7 @@
   font-weight: 600;
 }
 
-.box-header .header-top .header .header-top-right .list .list-menu .link::hover {
+.box-header .header-top .header .header-top-right .list .list-menu .link:hover {
   color: #fff;
   text-decoration: none;
 }
