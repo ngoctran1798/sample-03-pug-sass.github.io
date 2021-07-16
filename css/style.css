@@ -253,6 +253,7 @@
 
 .section-blog .blog .blog-item .item-content .content-post-meta {
   margin-top: -28px;
+  padding-bottom: 9px;
 }
 
 .section-blog .blog .blog-item .item-content .content-post-meta .title {
@@ -262,13 +263,13 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: #575153;
+  padding-bottom: 19px;
 }
 
 .section-blog .blog .blog-item .item-content .content-post-meta .content {
   margin-bottom: 0;
   font-size: 11px;
   text-transform: uppercase;
-  padding-top: 19px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: -0.5px;
   color: #727272;
@@ -277,7 +278,6 @@
 .section-blog .blog .blog-item .item-content .text {
   margin-bottom: 0;
   font-size: 12px;
-  padding-top: 9px;
   letter-spacing: -0.5px;
   word-spacing: 3px;
   text-align: justify;
@@ -289,9 +289,10 @@
 }
 
 .section-blog .blog .right {
-  padding-top: 75px;
   margin-left: -6px;
   padding-right: 9px;
+  position: relative;
+  top: 75px;
 }
 
 .section-blog .blog .right .item-content {
@@ -441,13 +442,13 @@
     padding: 0 5px 10px;
   }
   .box-footer .footer-banner .list .menu-list .link .image {
-    width: 450px;
+    width: 447px;
   }
   .box-footer .footer-copyright .copyright {
     padding: 0 10px;
   }
   .box-footer .footer-copyright .copyright .block-copyright .copyright-item .list .menu-list:nth-last-child(2) {
-    margin-left: 90px;
+    margin-left: 89px;
   }
 }
 
@@ -524,7 +525,7 @@
     padding: 0 7px 15px;
   }
   .box-footer .footer-banner .list .menu-list .link .image {
-    width: 328px;
+    width: 325px;
   }
   .box-footer .footer-copyright .copyright {
     padding: 0 10px;
