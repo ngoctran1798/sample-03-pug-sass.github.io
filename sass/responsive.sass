@@ -1,0 +1,358 @@
+$res_992: "only screen and (min-width: 992px) and (max-width: 1024px)"
+$res_768: "only screen and (min-width: 768px) and (max-width: 991px)"
+$res_320: "only screen and (min-width: 320px) and (max-width: 767px)"
+$res_377: "only screen and (min-width: 377px) and (max-width: 426px)"
+$res_322: "only screen and (min-width: 322px) and (max-width: 376px)"
+$res_321: "only screen and (max-width: 321px)"
+
+@mixin responsive_992()
+  @media #{$res_992}
+    @content
+
+@mixin responsive_768()
+  @media #{$res_768}
+    @content
+
+@mixin responsive_377()
+  @media #{$res_377}
+    @content
+
+@mixin responsive_320()
+  @media #{$res_320}
+    @content
+
+@mixin responsive_322()
+  @media #{$res_322}
+    @content
+
+@mixin responsive_321()
+  @media #{$res_321}
+    @content
+
+@include responsive_992
+  .box-header
+    .header-bottom
+      .header-bottom-menumain
+        right: 210px
+  .section-blog
+    .blog
+      padding: 50px 7px
+      .blog-item
+        .item-image
+          padding-bottom: 25px
+          .list
+            .menu-list
+              .link
+                .image
+                  width: 120px
+                  padding: 0px 4px
+      .right
+        padding-top: 50px
+        .item-content
+          margin-bottom: 20px
+  .box-footer
+    .footer-contact
+      .contact
+        padding: 10px 0px 20px
+    .footer-banner
+      padding: 0 10px 5px
+      .list
+        padding: 0 5px 10px
+        .menu-list
+          .link
+            .image
+              width: 450px
+    .footer-copyright
+      .copyright
+        padding: 0 10px
+        .block-copyright
+          .copyright-item
+            .list
+              .menu-list
+                &:nth-last-child(2)
+                  margin-left: 90px
+
+@include responsive_768
+  .box-header
+    .header-mobile
+      .block-logo
+        .image
+          padding-top: 20px
+      .header-search
+        position: relative
+        .navbar-light
+          .search
+            .form-search
+              display: none
+            .button-submit
+              position: absolute
+              right: 20px
+              top: -31px
+              border: 1px solid #00c8c8
+              background: #222
+              .image
+                padding: 12px 7px 10px 6px
+    .header-top
+      margin-top: 55px
+      .header
+        .header-top-left
+          margin-left: -6px
+        .header-top-right
+          margin-right: -35px
+          .list
+            .list-menu
+              &:nth-last-child(2)
+                padding-right: 45px
+    .header-bottom
+      padding-bottom: 0
+      .header-logo
+        display: none
+      .header-bottom-menumain
+        .wsmainwp
+          .wsmenu
+            .wsmenu-list
+              li
+                a
+                  i.list-icon
+                    display: none
+      .header-bottom-search
+        display: none
+  .section-blog
+    .blog
+      padding: 25px 0
+      .blog-item
+        .item-image
+          padding-bottom: 25px
+          .list
+            .menu-list
+              .link
+                .image
+                  width: 106px
+                  padding: 0 4px
+        .item-content
+          .content-post-meta
+            margin-top: -14px
+      .right
+        padding-top: 27px
+        .item-content
+          margin-bottom: 14px
+  .box-footer
+    .footer-contact
+      .contact
+        padding: 0px 10px 15px
+    .footer-banner
+      padding: 0 10px 5px
+      .list
+        padding: 0 7px 15px
+        .menu-list
+          .link
+            .image
+              width: 328px
+    .footer-copyright
+      .copyright
+        padding: 0 10px
+        .block-copyright
+          .copyright-item
+            .list
+              .menu-list
+                &:nth-last-child(2)
+                  margin-left: -38px
+
+@include responsive_320
+  .box-header
+    .header-mobile
+      .block-logo
+        .image
+          padding-top: 15px
+      .header-search
+        position: relative
+        .navbar-light
+          .search
+            .form-search
+              display: none
+            .button-submit
+              position: absolute
+              top: -23px
+              border: 1px solid #00c8c8
+              background: #222
+              .image
+                padding: 0 0 4px 0
+    .header-top
+      margin-top: 55px
+      .header
+        .header-top-left
+          margin-left: -6px
+        .header-top-right
+          margin-right: -35px
+          .list
+            .list-menu
+              &:nth-last-child(2)
+                padding-right: 45px
+    .header-bottom
+      padding-bottom: 0
+      .header-logo
+        display: none
+      .header-bottom-menumain
+        .wsmainwp
+          .wsmenu
+            .wsmenu-list
+              li
+                a
+                  i.list-icon
+                    display: none
+      .header-bottom-search
+        display: none
+
+  .section-blog
+    .blog
+      padding: 20px 0
+      .blog-item
+        .item-image
+          padding-bottom: 20px
+        .item-content
+          .content-post-meta
+            margin-top: -10px
+            .title
+              font-size: 9px
+            .content
+              font-size: 9px
+              padding-top: 6px
+          .text
+            font-size: 9px
+            padding-top: 4px
+            word-spacing: 1px
+            overflow: hidden
+            text-overflow: ellipsis
+            -webkit-line-clamp: 3
+            display: -webkit-box
+            -webkit-box-orient: vertical
+      .right
+        padding-top: 25px
+        padding-right: 0
+        .item-content
+          margin-bottom: 10px
+  .box-footer
+    .footer-contact
+      .contact
+        padding: 0px 20px 15px
+        .block-contact
+          &:nth-last-child(1), &:nth-last-child(4)
+            padding-left: 12px
+          &:nth-last-child(3)
+            padding-left: 12px
+          .contact-item
+            .title
+              padding-top: 5px
+    .footer-banner
+      padding: 0
+      .list
+        padding: 0 0 10px 0
+    .footer-copyright
+      .copyright
+        padding: 0
+        .block-copyright
+          .copyright-item
+            text-align: center
+            .list
+              .menu-list:nth-last-child(2)
+                margin-left: 0
+
+@include responsive_377
+  .box-header
+    .header-mobile
+      .header-search
+        .navbar-light
+          .search
+            .button-submit
+              right: 15px
+    .header-top
+      .header
+        .header-top-right
+          .list
+            .list-menu
+              padding: 0px 28.5px
+  .section-blog
+    .blog
+      .blog-item
+        .item-image
+          .list
+            .menu-list
+              .link
+                .image
+                  width: 60px
+                  padding: 0 3px
+  .box-footer
+    .footer-banner
+      .list
+        .menu-list
+          .link
+            .image
+              width: 185px
+
+@include responsive_322
+  .box-header
+    .header-mobile
+      .header-search
+        .navbar-light
+          .search
+            .button-submit
+              right: 10px
+    .header-top
+      .header
+        .header-top-right
+          .list
+            .list-menu
+              padding: 0px 28.5px
+  .section-blog
+    .blog
+      .blog-item
+        .item-image
+          .list
+            .menu-list
+              .link
+                .image
+                  width: 51px
+                  padding: 0px 1px
+  .box-footer
+    .footer-banner
+      .list
+        .menu-list
+          .link
+            .image
+              width: 160px
+
+@include responsive_321
+  .box-header
+    .header-mobile
+      .header-search
+        .navbar-light
+          .search
+            .button-submit
+              right: 7px
+    .header-top
+      .header
+        .header-top-right
+          .list
+            .list-menu
+              padding: 0px 25px
+            .list-cart
+              padding: 0px 23px 0 0
+              .addtocart
+                width: 90px
+  .section-blog
+    .blog
+      .blog-item
+        .item-image
+          .list
+            .menu-list
+              .link
+                .image
+                  width: 42px
+                  padding: 0
+  .box-footer
+    .footer-banner
+      .list
+        .menu-list
+          .link
+            .image
+              width: 132px
